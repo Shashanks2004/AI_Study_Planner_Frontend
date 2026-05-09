@@ -268,61 +268,183 @@ export default function Dashboard() {
 /* ================= STYLES ================= */
 
 const styles = StyleSheet.create({
-  sidebar: { width: 250, padding: 15, backgroundColor: "#f5f5f5" },
+  /* MAIN CONTAINER */
+  container: {
+    flex: 1,
+    flexDirection: "row",
+    backgroundColor: "#f4f4f4",
+  },
+
+  /* LEFT SIDEBAR */
+  sidebar: {
+    width: 240,
+    padding: 18,
+    backgroundColor: "#ffffff",
+    borderRightWidth: 1,
+    borderRightColor: "#e5e5e5",
+  },
+
   inboxBtn: {
     backgroundColor: "#7f1d1d",
-    padding: 10,
-    borderRadius: 20,
+    paddingVertical: 12,
+    borderRadius: 14,
+    alignItems: "center",
+    justifyContent: "center",
+    marginBottom: 15,
   },
-  inboxText: { color: "#fff", textAlign: "center" },
+
+  inboxText: {
+    color: "#fff",
+    fontWeight: "600",
+    fontSize: 15,
+  },
+
   addTask: {
     borderWidth: 1,
-    borderColor: "#7f1d1d",
-    padding: 10,
-    marginTop: 10,
-    borderRadius: 10,
-  },
-  sectionTitle: { marginTop: 10, fontWeight: "bold" },
-  sectionDesc: { fontSize: 12 },
-  openBtn: { marginTop: 10, borderWidth: 1, padding: 8 },
-
-  main: { flex: 1 },
-  background: { flex: 1, padding: 20 },
-
-  rightPanel: { width: 250, padding: 15, backgroundColor: "#f5f5f5" },
-
-  title: { fontSize: 16, fontWeight: "bold", marginBottom: 10 },
-  input: {
-    backgroundColor: "#fff",
-    padding: 10,
-    borderRadius: 10,
-    marginBottom: 10,
-  },
-  addBtn: {
-    backgroundColor: "#7f1d1d",
-    padding: 10,
-    borderRadius: 10,
-    alignItems: "center",
-    marginTop: 5,
-  },
-  btnText: { color: "#fff", fontWeight: "bold" },
-
-  card: {
+    borderColor: "#d1d5db",
     backgroundColor: "#fff",
     padding: 12,
     borderRadius: 12,
-    marginTop: 15,
+    marginBottom: 18,
   },
-  subject: { fontWeight: "bold" },
 
-  progressBg: {
-    height: 8,
-    backgroundColor: "#eee",
+  sectionTitle: {
+    marginTop: 10,
+    fontWeight: "700",
+    fontSize: 16,
+    color: "#111827",
+  },
+
+  sectionDesc: {
+    fontSize: 13,
+    color: "#6b7280",
+    marginTop: 4,
+    lineHeight: 18,
+  },
+
+  openBtn: {
+    marginTop: 14,
+    borderWidth: 1,
+    borderColor: "#7f1d1d",
+    paddingVertical: 10,
     borderRadius: 10,
+    alignItems: "center",
+    backgroundColor: "#fff",
+  },
+
+  /* CENTER AREA */
+  main: {
+    flex: 1,
+    backgroundColor: "#f9fafb",
+  },
+
+  background: {
+  flex: 1,
+  width: "100%",
+  height: "100%",
+},
+
+  /* RIGHT PANEL */
+  rightPanel: {
+    width: 280,
+    padding: 18,
+    backgroundColor: "#ffffff",
+    borderLeftWidth: 1,
+    borderLeftColor: "#e5e5e5",
+  },
+
+  /* TITLES */
+  title: {
+    fontSize: 20,
+    fontWeight: "700",
+    color: "#111827",
+    marginBottom: 16,
+  },
+
+  /* INPUT */
+  input: {
+    backgroundColor: "#ffffff",
+    paddingVertical: 12,
+    paddingHorizontal: 14,
+    borderRadius: 12,
+    marginBottom: 12,
+    borderWidth: 1,
+    borderColor: "#e5e7eb",
+    fontSize: 14,
+  },
+
+  /* BUTTON */
+  addBtn: {
+    backgroundColor: "#7f1d1d",
+    paddingVertical: 13,
+    borderRadius: 12,
+    alignItems: "center",
+    justifyContent: "center",
+    marginTop: 5,
+    shadowColor: "#000",
+    shadowOpacity: 0.08,
+    shadowRadius: 4,
+    elevation: 2,
+  },
+
+  btnText: {
+    color: "#fff",
+    fontWeight: "700",
+    fontSize: 14,
+  },
+
+  /* SUBJECT CARD */
+  card: {
+    backgroundColor: "#ffffff",
+    padding: 16,
+    borderRadius: 16,
+    marginTop: 16,
+    shadowColor: "#000",
+    shadowOpacity: 0.06,
+    shadowRadius: 6,
+    elevation: 2,
+  },
+
+  subject: {
+    fontWeight: "700",
+    fontSize: 15,
+    color: "#111827",
+    marginBottom: 10,
+  },
+
+  /* PROGRESS */
+  progressBg: {
+    height: 10,
+    backgroundColor: "#ececec",
+    borderRadius: 20,
+    overflow: "hidden",
     marginTop: 6,
   },
+
   progressFill: {
     height: "100%",
-    backgroundColor: "#e8a1a1",
+    backgroundColor: "#d97777",
+    borderRadius: 20,
+  },
+
+  /* TOPIC ROW */
+  topicRow: {
+    backgroundColor: "#f3f4f6",
+    padding: 10,
+    borderRadius: 10,
+    marginTop: 10,
+    flexDirection: "row",
+    alignItems: "center",
+  },
+
+  topicText: {
+    fontSize: 14,
+    color: "#374151",
+    marginLeft: 8,
+  },
+
+  /* RESPONSIVE */
+  mobileContainer: {
+    flexDirection: "column",
   },
 });
